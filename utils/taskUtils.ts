@@ -14,27 +14,55 @@ export const sortTasksByPriority = (tasks: Task[]): Task[] => {
   })
 }
 
-export const getPriorityColor = (priority: Priority): string => {
+export const getPriorityColor = (priority: Priority) => {
   switch (priority) {
     case "high":
-      return "bg-red-500 text-white"
+      return {
+        backgroundColor: "#ef4444",
+        color: "white",
+        borderColor: "#dc2626",
+      }
     case "medium":
-      return "bg-yellow-500 text-white"
+      return {
+        backgroundColor: "#f59e0b",
+        color: "white",
+        borderColor: "#d97706",
+      }
     case "low":
-      return "bg-green-500 text-white"
+      return {
+        backgroundColor: "#10b981",
+        color: "white",
+        borderColor: "#059669",
+      }
   }
 }
 
-export const getStatusColor = (status: string): string => {
+export const getStatusColor = (status: string) => {
   switch (status) {
     case "todo":
-      return "bg-gray-500 text-white"
+      return {
+        backgroundColor: "#6b7280",
+        color: "white",
+        borderColor: "#4b5563",
+      }
     case "in-progress":
-      return "bg-blue-500 text-white"
+      return {
+        backgroundColor: "#3b82f6",
+        color: "white",
+        borderColor: "#2563eb",
+      }
     case "done":
-      return "bg-emerald-500 text-white"
+      return {
+        backgroundColor: "#10b981",
+        color: "white",
+        borderColor: "#059669",
+      }
     default:
-      return "bg-gray-500 text-white"
+      return {
+        backgroundColor: "#6b7280",
+        color: "white",
+        borderColor: "#4b5563",
+      }
   }
 }
 

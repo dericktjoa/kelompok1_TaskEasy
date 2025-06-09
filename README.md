@@ -1,74 +1,90 @@
-<<<<<<< HEAD
-# kelompok1_TaskEasy
-=======
-# Getting Started with Create React App
+# TaskEasy - Team Task Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight web application built with React and Next.js to help teams manage tasks efficiently.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- ✅ Create, read, update, and delete tasks
+- 🎯 Task prioritization (Low, Medium, High)
+- 📊 Status tracking (To-Do, In Progress, Done)
+- 🔄 Automatic priority-based sorting
+- 💾 Local storage persistence
+- 📱 Responsive design
+- 📈 Task statistics dashboard
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js 18+ 
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+\`\`\`bash
+git clone <repository-url>
+cd taskeasy
+\`\`\`
 
-### `npm run build`
+2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the development server
+\`\`\`bash
+npm run dev
+\`\`\`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Testing
 
-### `npm run eject`
+Run the test suite:
+\`\`\`bash
+npm test
+\`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run tests in watch mode:
+\`\`\`bash
+npm run test:watch
+\`\`\`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## XP Practices Implemented
 
-## Learn More
+- **Test-Driven Development (TDD)**: Unit tests for utility functions
+- **Continuous Integration**: GitHub Actions workflow for automated testing
+- **Small Releases**: Incremental feature development
+- **Refactoring**: Clean, modular component architecture
+- **Pair Programming**: Code structure supports collaborative development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+\`\`\`
+src/
+├── app/                 # Next.js app directory
+├── components/          # React components
+├── types/              # TypeScript type definitions
+├── utils/              # Utility functions
+└── __tests__/          # Test files
+\`\`\`
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Create a feature branch
+2. Write tests for new functionality
+3. Implement the feature
+4. Ensure all tests pass
+5. Submit a pull request
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> master
+MIT License

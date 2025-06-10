@@ -11,7 +11,7 @@ describe("taskUtils", () => {
           title: "Low priority task",
           description: "",
           priority: "low",
-          status: "to-do",
+          status: "todo",
           createdAt: new Date("2024-01-01"),
           updatedAt: new Date("2024-01-01"),
         },
@@ -20,7 +20,7 @@ describe("taskUtils", () => {
           title: "High priority task",
           description: "",
           priority: "high",
-          status: "to-do",
+          status: "todo",
           createdAt: new Date("2024-01-02"),
           updatedAt: new Date("2024-01-02"),
         },
@@ -29,7 +29,7 @@ describe("taskUtils", () => {
           title: "Medium priority task",
           description: "",
           priority: "medium",
-          status: "to-do",
+          status: "todo",
           createdAt: new Date("2024-01-03"),
           updatedAt: new Date("2024-01-03"),
         },
@@ -44,18 +44,46 @@ describe("taskUtils", () => {
   })
 
   describe("getPriorityColor", () => {
-    it("should return correct colors for each priority", () => {
-      expect(getPriorityColor("high")).toContain("red")
-      expect(getPriorityColor("medium")).toContain("yellow")
-      expect(getPriorityColor("low")).toContain("green")
+    it("should return correct color objects for each priority", () => {
+      expect(getPriorityColor("high")).toEqual({
+        backgroundColor: "#ef4444",
+        color: "white",
+        borderColor: "#dc2626",
+      })
+
+      expect(getPriorityColor("medium")).toEqual({
+        backgroundColor: "#f59e0b",
+        color: "white",
+        borderColor: "#d97706",
+      })
+
+      expect(getPriorityColor("low")).toEqual({
+        backgroundColor: "#10b981",
+        color: "white",
+        borderColor: "#059669",
+      })
     })
   })
 
   describe("getStatusColor", () => {
-    it("should return correct colors for each status", () => {
-      expect(getStatusColor("to-do")).toContain("gray")
-      expect(getStatusColor("in-progress")).toContain("blue")
-      expect(getStatusColor("done")).toContain("green")
+    it("should return correct color objects for each status", () => {
+      expect(getStatusColor("todo")).toEqual({
+        backgroundColor: "#6b7280",
+        color: "white",
+        borderColor: "#4b5563",
+      })
+
+      expect(getStatusColor("in-progress")).toEqual({
+        backgroundColor: "#3b82f6",
+        color: "white",
+        borderColor: "#2563eb",
+      })
+
+      expect(getStatusColor("done")).toEqual({
+        backgroundColor: "#10b981",
+        color: "white",
+        borderColor: "#059669",
+      })
     })
   })
 })

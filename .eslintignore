@@ -1,0 +1,7 @@
+# .eslintignore
+
+node_modules
+.next
+public
+dist
+coverage

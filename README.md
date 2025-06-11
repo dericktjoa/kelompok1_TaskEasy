@@ -34,6 +34,8 @@ cd kelompok1_TaskEasy
 npm install
 ```
 
+---
+
 ### 🔄 Run Development Server
 
 ```bash
@@ -68,10 +70,10 @@ npm start
 - **Pair Programming**: Diskusi kolaboratif usulan fitur dan kode
 - **Test-Driven Development (TDD)**: Unit test untuk `taskUtils.getPriorityColor` & `sortTasksByPriority`
 - **Continuous Integration**: Setup GitHub Actions untuk lint, test, build
-- **Small Releases**: Fitur dikembangkan sekaligus dirilis per-minggu
-- **Refactoring**: Kode dibersihkan sesuai saran ESLint/Prettier
+- **Small Releases**: Fitur dikembangkan sekaligus dirilis per-hari
+- **Refactoring**: Kode dibersihkan sesuai saran ESLint
 - **Customer Collaboration**: Product owner aktif memberi feedback dan berpartisipasi dalam pengambilan keputusan
-- **Planning Game**: Sesi mingguan di mana PO menetapkan prioritas, dan developer memperkirakan effort untuk memilih user story minggu ini
+- **Planning Game**: PO menetapkan prioritas dan developer memperkirakan effort untuk memilih user story
 
 ---
 

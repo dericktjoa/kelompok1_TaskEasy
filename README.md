@@ -1,90 +1,99 @@
-# TaskEasy - Team Task Management App
+# 📘 TaskEasy – Team Task Management App
 
 A lightweight web application built with React and Next.js to help teams manage tasks efficiently.
 
-## Features
+🌐 **Live App**: https://kelompok1-task-easy-drab.vercel.app/  
+📁 **Repository**: https://github.com/dericktjoa/kelompok1_TaskEasy
 
-- ✅ Create, read, update, and delete tasks
-- 🎯 Task prioritization (Low, Medium, High)
-- 📊 Status tracking (To-Do, In Progress, Done)
-- 🔄 Automatic priority-based sorting
-- 💾 Local storage persistence
-- 📱 Responsive design
-- 📈 Task statistics dashboard
+---
 
-## Getting Started
+## ✨ Features
 
-### Prerequisites
+✅ Create, read, update, and delete tasks  
+🎯 Task prioritization (Low, Medium, High)  
+📊 Status tracking (To-Do, In Progress, Done)  
+🔄 Automatic priority-based sorting  
+💾 Local storage persistence  
+📱 Responsive design  
+📈 Task statistics dashboard
 
-- Node.js 18+ 
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js 18+
 - npm or yarn
 
-### Installation
+### 🔧 Installation
 
-1. Clone the repository
-\`\`\`bash
-git clone <repository-url>
-cd taskeasy
-\`\`\`
-
-2. Install dependencies
-\`\`\`bash
+```bash
+git clone https://github.com/dericktjoa/kelompok1_TaskEasy.git
+cd kelompok1_TaskEasy
 npm install
-\`\`\`
+```
 
-3. Run the development server
-\`\`\`bash
+### 🔄 Run Development Server
+
+```bash
 npm run dev
-\`\`\`
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Buka `http://localhost:3000` di browser kamu.
 
-### Testing
+---
 
-Run the test suite:
-\`\`\`bash
+## 🧪 Testing
+
+Jalankan test suite:
+
+```bash
 npm test
-\`\`\`
+```
 
-Run tests in watch mode:
-\`\`\`bash
-npm run test:watch
-\`\`\`
+---
 
-### Building for Production
+## 🏗️ Build for Production
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
-## XP Practices Implemented
+---
 
-- **Test-Driven Development (TDD)**: Unit tests for utility functions
-- **Continuous Integration**: GitHub Actions workflow for automated testing
-- **Small Releases**: Incremental feature development
-- **Refactoring**: Clean, modular component architecture
-- **Pair Programming**: Code structure supports collaborative development
+## 🧩 XP Practices yang Diimplementasikan
 
-## Project Structure
+- **Pair Programming**: Diskusi kolaboratif usulan fitur dan kode
+- **Test-Driven Development (TDD)**: Unit test untuk `taskUtils.getPriorityColor` & `sortTasksByPriority`
+- **Continuous Integration**: Setup GitHub Actions untuk lint, test, build
+- **Small Releases**: Fitur dikembangkan sekaligus dirilis per-minggu
+- **Refactoring**: Kode dibersihkan sesuai saran ESLint/Prettier
+- **Customer Collaboration**: Product owner aktif memberi feedback dan berpartisipasi dalam pengambilan keputusan
+- **Planning Game**: Sesi mingguan di mana PO menetapkan prioritas, dan developer memperkirakan effort untuk memilih user story minggu ini
 
-\`\`\`
-src/
-├── app/                 # Next.js app directory
-├── components/          # React components
-├── types/              # TypeScript type definitions
-├── utils/              # Utility functions
-└── __tests__/          # Test files
-\`\`\`
+---
 
-## Contributing
+## 🗂️ Struktur Folder Proyek
 
-1. Create a feature branch
-2. Write tests for new functionality
-3. Implement the feature
-4. Ensure all tests pass
-5. Submit a pull request
+```
+/app              → Next.js app directory
+/components       → Komponen React (task card, form, stats)
+/pages            → Halaman utama
+/types            → Tipe data TypeScript
+/utils            → Fungsi utilitas (task & local storage)
+__tests__         → File pengujian
+```
 
-## License
+---
 
-MIT License
+## 🤝 Contributing
+
+1. Fork repo ini
+2. Buat branch baru (`feature/nama-fitur`)
+3. Tulis test untuk fungsionalitas baru
+4. Pastikan semua test lolos
+5. Buat pull request
+
+---
